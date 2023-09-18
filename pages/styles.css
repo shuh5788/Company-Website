@@ -6,6 +6,12 @@ ul,
 li {
   margin: 0;
   padding: 0;
+  font-weight: lighter;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -13,11 +19,72 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  font-family: "DIN Neuzeit Grotesk", sans-serif;
 }
 
 main {
   padding: 20px;
+  background-repeat: no-repeat;
+  text-align: center;
+  min-width: auto;
+  min-height: auto;
+}
+
+.center-text {
+  background-image: url("../assets/images/cleanEating.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  width: 100%;
+  height: 50vh;
   color: white;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 100px;
+}
+
+.feature-box {
+  flex: 1;
+}
+
+.feature-box p {
+  margin-top: 10px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-item {
+  flex: 1;
+}
+
+.category-item img {
+  padding: 20px;
+}
+
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.brands img {
+  margin: 15px;
+  flex-basis: calc(20% - 20px);
+  max-width: calc(20% - 20px);
+  box-sizing: border-box;
+  width: 70%;
+  height: auto;
 }
 
 footer {
@@ -28,8 +95,7 @@ footer {
 }
 
 header {
-  /* background-color: #333; */
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -37,12 +103,20 @@ header {
   header {
     padding: 10px;
   }
+  #profileIcon,
+  #searchIcon,
+  #cartIcon,
+  #navButton {
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    background-size: 60%;
+  }
 }
 
 .main-header .container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -50,10 +124,40 @@ header {
   display: none;
 }
 
-#navButton {
+.categories {
   padding: 10px;
-  width: 3%;
-  height: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notFound {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: lighter;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+#profileIcon,
+#searchIcon,
+#cartIcon,
+#navButton {
+  padding: 15px;
+  width: 40px;
+  height: 40px;
+  background-size: 70%;
+}
+#navButton {
   background-image: url("../assets/icons/menu.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -63,37 +167,25 @@ header {
 }
 
 #profileIcon {
-  padding: 10px;
-  width: 10%;
-  height: 10%;
   background-image: url("../assets/icons/profile.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 50%;
   background-color: transparent;
   border: none;
 }
 
 #searchIcon {
-  padding: 10px;
-  width: 10%;
-  height: 10%;
   background-image: url("../assets/icons/search.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 50%;
   background-color: transparent;
   border: none;
 }
 
 #cartIcon {
-  padding: 10px;
-  width: 10%;
-  height: 10%;
   background-image: url("../assets/icons/cart.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 50%;
   background-color: transparent;
   border: none;
 }
