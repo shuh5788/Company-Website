@@ -50,10 +50,55 @@ main {
 
 .feature-box {
   flex: 1;
+  line-height: 150%;
 }
 
 .feature-box p {
   margin-top: 10px;
+}
+
+.items {
+  display: flex;
+  width: 50%;
+  height: 50vh;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 80px;
+}
+
+.products-title {
+  padding: 30px;
+}
+
+.products-title h2 {
+  margin: 10px;
+  margin-bottom: 15px;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  border-top: lightgray solid 1px;
+  border-bottom: lightgray solid 1px;
+  padding: 20px;
+}
+
+.product-container {
+  display: flex;
+}
+
+.filter {
+  display: flex;
+  padding: 20px;
+  line-height: 35px;
+}
+
+.filter-option {
+  flex-direction: column;
+}
+
+.item {
+  margin: 20px;
 }
 
 .categories {
@@ -116,12 +161,25 @@ header {
 
 .main-header .container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
+/* .main-header img {
+  justify-content: center;
+} */
+
 .main-nav {
   display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 220px;
+  padding: 50px;
+  background-color: white;
+  flex-direction: column;
 }
 
 .categories {
@@ -188,10 +246,69 @@ header {
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
+  background-size: 63%;
+}
+
+.main-nav-list {
+  text-decoration: none;
+  padding: 0;
+}
+
+.main-nav-list li {
+  margin-bottom: 10px;
 }
 
 .main-nav-list a {
   text-decoration: none;
+  color: black;
+  display: block;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.form-section {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: center;
+  margin-bottom: 20px;
+}
+
+.form-section form label {
+  font-size: 18px;
+}
+
+.form-section form input[type="text"] {
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form-section form button {
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.location-section {
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 ul {
@@ -199,10 +316,11 @@ ul {
 }
 
 #navButton:hover + .main-nav {
-  display: block;
+  display: flex;
+  color: #777;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
