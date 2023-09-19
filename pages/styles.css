@@ -30,6 +30,11 @@ main {
   min-height: auto;
 }
 
+.logo-image {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
 .center-text {
   background-image: url("../assets/images/cleanEating.jpeg");
   background-repeat: no-repeat;
@@ -226,7 +231,6 @@ header {
 #searchIcon,
 #cartIcon,
 #navButton {
-  padding: 15px;
   width: 40px;
   height: 40px;
   background-size: 70%;
@@ -282,12 +286,13 @@ header {
   transition: color 0.3s;
 }
 
-.flex-container {
+.contact-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   width: 80%;
   margin: 20px auto;
+  flex-direction: row;
 }
 
 .form-section {
@@ -330,11 +335,6 @@ header {
 ul {
   list-style-type: none;
 }
-
-/* #navButton:hover + .main-nav {
-  display: flex;
-  color: #777;
-} */
 
 /* img {
   max-width: 100%;
