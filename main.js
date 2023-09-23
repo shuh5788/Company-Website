@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const mainHeader = document.querySelector("#navButton");
   const slideInNav = document.querySelector(".main-nav");
-  console.log(mainHeader);
+  const body = document.querySelector("main");
 
   let timer;
   let isHovered = false;
@@ -10,25 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
     clearTimeout(timer);
     slideInNav.style.right = "0";
     isHovered = true;
-  });
-
-  slideInNav.addEventListener("mouseenter", () => {
-    clearTimeout(timer);
-    isHovered = true;
-  });
-
-  mainHeader.addEventListener("mouseleave", () => {
-    if (isHovered) {
-      timer = setTimeout(() => {
-        slideInNav.style.right = "-250px";
-      }, 100);
-    }
+    body.style.filter = "blur(5px)";
   });
 
   slideInNav.addEventListener("mouseleave", () => {
     if (isHovered) {
       timer = setTimeout(() => {
         slideInNav.style.right = "-250px";
+        body.style.filter = "none";
       }, 100);
     }
   });

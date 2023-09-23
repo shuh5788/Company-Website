@@ -68,7 +68,8 @@ main {
   height: 50vh;
   justify-content: space-between;
   padding: 20px;
-  margin: 80px;
+  margin-left: 80px;
+  /* margin: 80px; */
 }
 
 .products-title {
@@ -112,7 +113,7 @@ main {
 
 .categories {
   display: flex;
-  justify-content: space-between;
+  margin: 90px;
 }
 
 .category-item {
@@ -139,6 +140,33 @@ main {
   box-sizing: border-box;
   width: 70%;
   height: auto;
+}
+
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
 }
 
 footer {
@@ -269,6 +297,10 @@ header {
   background-size: 63%;
 }
 
+.container {
+  position: sticky;
+}
+
 .main-nav-list {
   text-decoration: none;
   padding: 0;
@@ -290,36 +322,45 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 80%;
+  width: 60%;
   margin: 20px auto;
   flex-direction: row;
 }
 
 .form-section {
   flex: 1;
-  padding-right: 20px;
 }
 
 .form-group {
   display: flex;
   flex-direction: center;
-  margin-bottom: 20px;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .form-section form label {
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .form-section form input[type="text"] {
   font-size: 16px;
   border-radius: 5px;
+  margin-bottom: 10px;
+  width: 300px;
+  height: 30px;
   padding: 10px;
+}
+
+.form-section form input#message {
+  height: 150px;
+  resize: vertical;
 }
 
 .form-section form button {
   font-size: 16px;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   background-color: gray;
   color: white;
   border: none;
@@ -329,14 +370,10 @@ header {
 .location-section {
   flex: 1;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 5%;
+  margin-top: 30px;
 }
 
 ul {
   list-style-type: none;
 }
-
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
