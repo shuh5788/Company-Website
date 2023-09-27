@@ -76,7 +76,7 @@ main {
 .feature-box {
   flex: 1;
   line-height: 150%;
-  animation: fadeIn 1s ease;
+  animation: fadeIn 2s ease;
 }
 
 .feature-box p {
