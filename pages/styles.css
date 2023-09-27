@@ -64,9 +64,19 @@ main {
   margin: 100px;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .feature-box {
   flex: 1;
   line-height: 150%;
+  animation: fadeIn 1s ease;
 }
 
 .feature-box p {
