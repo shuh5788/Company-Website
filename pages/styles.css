@@ -76,7 +76,13 @@ main {
 .feature-box {
   flex: 1;
   line-height: 150%;
-  animation: fadeIn 2s ease;
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
 }
 
 .feature-box p {

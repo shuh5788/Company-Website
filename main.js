@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function goToSlide(index) {
     currentIndex = index;
     const translateX = -currentIndex * (100 / 30);
-    slideContainer.style.transition = "transform 0.5s ease-in-out";
+    slideContainer.style.transition = "transform 1s ease-in-out";
     slideContainer.style.transform = `translateX(${translateX}%)`;
 
     setTimeout(() => {
